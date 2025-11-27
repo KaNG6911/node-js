@@ -33,10 +33,13 @@ startBtn.onclick = function () {
     }
     disp();
   }, 10);
-  this.style()
+  startBtn.style.backgroundColor = "rgb(67, 67, 67)";
+  startBtn.style.color = "rgb(125, 125, 125)";
 };
 stopBtn.onclick = function () {
   clearInterval(interval);
+  stopBtn.style.backgroundColor = "rgb(67, 67, 67)";
+  stopBtn.style.color = "rgb(125, 125, 125)";
 };
 resetBtn.onclick = function () {
   hourTime = 0;
@@ -45,4 +48,6 @@ resetBtn.onclick = function () {
   doilTime = 0;
   clearInterval(interval);
   disp();
+  resetBtn.style.backgroundColor = "rgb(67, 67, 67)";
+  resetBtn.style.color = "rgb(125, 125, 125)";
 };
